@@ -11,6 +11,37 @@ const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
+    const [scrollPos, setScrollPos] = useState(0)
+    const [scrollDirection, setScrollDirection] =  useState("")
+
+    // logic to display navbar based on scroll direction.
+    // FAULT: Dynamically changing text automatically scrolls screen causing glitch
+    // TODO: Find out if there is another way to watch for scroll event that wont be affected
+
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     const currentScrollPos = window.scrollY
+    //     setScrollDirection(
+    //       currentScrollPos > 50 && currentScrollPos > scrollPos ? "down" : "up"
+    //     )
+    //     setScrollPos(currentScrollPos)
+
+    //     if (window.scrollY > 50){
+    //       setScrolled(true)
+    //     }else{
+    //         setScrolled(false)
+    //     }
+    //   }
+
+    //   window.addEventListener('scroll', handleScroll);
+
+    //   return(() => {
+    //     window.removeEventListener('scroll', handleScroll)
+    //   })
+    // })
+
+
+
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50){
@@ -35,7 +66,9 @@ const NavBar = () => {
     const githubLink = "https://github.com/jentlejoe"
 
   return (
-    <Navbar expand="lg" className={scrolled ? 'scrolled' : ''} >
+    <Navbar expand="lg" className={`${scrolled ? 'scrolled' : ''} 
+    ${window.scrollY > 150 && scrollDirection === "down" ? "scrollup" : ""}
+    ${window.scrollY > 150 && scrollDirection === "up" ? "scrolldown" : ""} `} >
       <Container>
         <Navbar.Brand href="#home">
             <img src={logo}  alt = "logo" />

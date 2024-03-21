@@ -5,6 +5,7 @@ import meter1 from '../assets/img/meter1.svg'
 import meter2 from '../assets/img/meter2.svg'
 import meter3 from '../assets/img/meter3.svg'
 import colorSharp from '../assets/img/color-sharp.png'
+import { skills } from "./Text";
 
 
 export default function Skills(){
@@ -37,7 +38,7 @@ export default function Skills(){
                         <div className="skill-bx">
                             <h2>Skills</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tellus at eros fringilla iaculis ac et neque. Proin vitae scelerisque nulla, quis congue enim. Vestibulum metus neque, porta quis placerat eu, luctus vel orci. Nulla quis viverra lorem, a elementum urna. Vestibulum bibendum, neque quis luctus posuere, sem mi auctor felis, at pellentesque libero tortor sed tellus. Nulla facilisi. Integer eu turpis aliquam, hendrerit mauris a, fringilla magna. Phasellus bibendum lacus eget ligula interdum tristique. Curabitur ornare massa pharetra nunc volutpat tincidunt.
+                                {skills}
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
@@ -53,8 +54,8 @@ export default function Skills(){
                                     <h5>UI/UX Design</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Web Development </h5>
+                                    <img src={meter2} alt="Image" />
+                                    <h5>Backend Functionality</h5>
                                 </div>
                             </Carousel>
                         </div>
