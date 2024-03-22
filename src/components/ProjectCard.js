@@ -1,7 +1,8 @@
 import { Col } from "react-bootstrap";
 
 
-export default function ProjectCard({title, description, imgUrl}){
+export default function ProjectCard({title, description, imgUrl, projUrl}){
+
     return(
         <Col sm={6} md={4}>
             <div className="proj-imgbx">

@@ -65,11 +65,11 @@ export default function Contact(){
                         <form onSubmit={handleSubmit} >
                             <Row>
                                 <Col sm={6} className="px-1" >
-                                    <input type="text" value={formDetails.firstName} placeholder="First Name" 
+                                    <input type="text" value={formDetails.firstName} placeholder="First Name"
                                     onChange={(e) => {updateForm('firstName', e.target.value)}} />
                                 </Col>
                                 <Col sm={6} className="px-1" >
-                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" 
+                                    <input type="text" value={formDetails.lastName} placeholder="Last Name"
                                     onChange={(e) => {updateForm('lastName', e.target.value)}} />
                                 </Col>
                                 <Col sm={6} className="px-1" >
@@ -93,7 +93,8 @@ export default function Contact(){
                                 }
                             </Row>
                         </form>
-                        {showText && <p className="dummyText"> <span className="exclamation">!! </span>This is just a dummy form, please connect through <span> </span>
+                        {showText && <p className="dummyText"> <span className="exclamation">!! </span>
+                        This is just a dummy form, please connect through <span> </span>
                         <a className="dummyLink" target="_blanck" href="https://linkedin.com/in/joshua-oseghale">LinkdIn</a>
                         <br/> OR <br /> Send a mail to <span className="mail">joshuaoseghale01@gmail.com</span>
                         </p>}
