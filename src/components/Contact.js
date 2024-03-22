@@ -16,6 +16,13 @@ export default function Contact(){
     const [buttonText, setButtonText] = useState('Send')
     const [status, setStatus] = useState({})
 
+    // Form Dummy text state management
+    const [showText, setShowText] = useState(false)
+
+    const handleShowText = () => {
+        setShowText((prev) => !prev)
+    }
+
     const updateForm = (category, value) => {
         setFormDetails({
             ...formDetails,
@@ -24,7 +31,7 @@ export default function Contact(){
     }
 
     const handleSubmit = async (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         // setButtonText("Sending...");
         // let response = await fetch("http://localhost:5000/contact", {
         //     method: "POST",
@@ -41,6 +48,9 @@ export default function Contact(){
         // } else {
         //     setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
         // }
+
+        // remove after setting up email functionality
+        handleShowText();
       };
 
     return(
@@ -83,6 +93,10 @@ export default function Contact(){
                                 }
                             </Row>
                         </form>
+                        {showText && <p className="dummyText"> <span className="exclamation">!! </span>This is just a dummy form, please connect through <span> </span>
+                        <a className="dummyLink" target="_blanck" href="https://linkedin.com/in/joshua-oseghale">LinkdIn</a>
+                        <br/> OR <br /> Send a mail to <span className="mail">joshuaoseghale01@gmail.com</span>
+                        </p>}
                     </Col>
                 </Row>
             </Container>

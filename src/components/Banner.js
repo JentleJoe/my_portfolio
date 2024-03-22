@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {ArrowRightCircle} from 'react-bootstrap-icons'
-import headerImg from '../assets/img/header-img.svg'
+import { about } from "./Text";
+import astronaut from '../assets/img/astronaut.png'
 
 export default function Banner(){
 
@@ -55,11 +56,11 @@ export default function Banner(){
                     <Col xs={12} md={6} xl={7} >
                         <span className="tagline" >Welcome to my Portfolio</span>
                         <h1>{ 'Hi I\'m JentleJoe, ' }<span className="wrap"> {text} </span> </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tellus at eros fringilla iaculis ac et neque. Proin vitae scelerisque nulla, quis congue enim. Vestibulum metus neque, porta quis placerat eu, luctus vel orci. Nulla quis viverra lorem, a elementum urna. Vestibulum bibendum, neque quis luctus posuere, sem mi auctor felis, at pellentesque libero tortor sed tellus. Nulla facilisi. Integer eu turpis aliquam, hendrerit mauris a, fringilla magna. Phasellus bibendum lacus eget ligula interdum tristique. Curabitur ornare massa pharetra nunc volutpat tincidunt.</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                        <p>{about}</p>
+                        <button className="connect-btn" onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
+                        <img src={astronaut} alt="Header Img" />
                     </Col>
                 </Row>
             </Container>

@@ -70,9 +70,9 @@ const NavBar = () => {
     ${window.scrollY > 150 && scrollDirection === "down" ? "scrollup" : ""}
     ${window.scrollY > 150 && scrollDirection === "up" ? "scrolldown" : ""} `} >
       <Container>
-        <Navbar.Brand href="#home">
+        {/* <Navbar.Brand href="#home">
             <img src={logo}  alt = "logo" />
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
@@ -90,9 +90,9 @@ const NavBar = () => {
                 <a href={linkdinLink} target="_blank"><img src={linkdinLogo} alt='' /></a>
                 <a href={twitterLink} target="_blank"><img src={xlogo} alt='' /></a>
                 <a href={githubLink} target="_blank"><img src={githubLogo} alt='' /></a>
-                <button className='vvd' onClick={() => console.log ('connect')} >
+                {/* <button className='vvd' onClick={() => console.log ('connect')} >
                   <span>Let's Connect</span>
-                </button>
+                </button> */}
             </div>
           </span>
         </Navbar.Collapse>
