@@ -11,7 +11,8 @@ const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    const [scrollPos, setScrollPos] = useState(0)
+    // state to display navbar based on scroll position
+    // const [scrollPos, setScrollPos] = useState(0)
     const [scrollDirection, setScrollDirection] =  useState("")
 
     // logic to display navbar based on scroll direction.
@@ -66,7 +67,7 @@ const NavBar = () => {
     const githubLink = "https://github.com/jentlejoe"
 
   return (
-    <Navbar expand="lg" className={`${scrolled ? 'scrolled' : ''} 
+    <Navbar expand="lg" className={`${scrolled ? 'scrolled' : ''}
     ${window.scrollY > 150 && scrollDirection === "down" ? "scrollup" : ""}
     ${window.scrollY > 150 && scrollDirection === "up" ? "scrolldown" : ""} `} >
       <Container>
