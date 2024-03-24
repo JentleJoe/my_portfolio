@@ -1,14 +1,10 @@
 import { Col, Container, Row, Tab } from "react-bootstrap"
-import projImg1 from '../assets/img/project-img1.png'
-import projImg2 from '../assets/img/project-img2.png'
-import projImg3 from '../assets/img/project-img3.png'
 import portfolio from '../assets/img/portfolio.png'
 import joebank from '../assets/img/joebank.png'
-import portfolio_Img from '../assets/img/portfolio_Img.png'
+import littleLemon from '../assets/img/little-lemon.png'
 import Nav from 'react-bootstrap/Nav';
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png"
-import demo_portfolio from "../assets/img/demo_portfolio.png"
 import { projects_text } from "./Text";
 
 
@@ -36,7 +32,7 @@ export default function Projects(){
             description:   `A restaurant homepage with fully functional table
             reservation section.
              STILL UNDER BUILD ...`,
-            imgUrl: projImg2,
+            imgUrl: littleLemon,
             projUrl: '#projects'
         }
     ]
