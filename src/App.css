@@ -555,6 +555,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /********** Project Card Css *********/
 .proj-btn{
   color: #fff;
+  font-weight: 700;
   letter-spacing: 0.8px;
   justify-content: center;
   align-items: center;
