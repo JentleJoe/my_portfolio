@@ -13,27 +13,30 @@ export default function Projects(){
 
     const projects = [
         {
-            show: true,
+            redirect: true,
             title: "Business Landing Page",
             description: "Modern UI business landing page built with react.js and tailwind css",
             imgUrl: joebank,
-            projUrl: '#projects'    //Change to URL live site
+            projUrl: 'https://joebank.vercel.app',
+            inProgress: false
         },
         {
-            show: true,
+            redirect: false,
             title: "Portfolio Page",
             description: "React Portfolio page with modern UI and animations",
             imgUrl: portfolio,
-            projUrl: '#projects'
+            projUrl: '#home',
+            inProgress: false
         },
         {
-            show: false,
+            redirect: false,
             title: "Little Lemon Restaurant",
             description: `Restaurant with table
             reservation section.
              STILL UNDER BUILD ...`,
             imgUrl: littleLemon,
-            projUrl: '#projects'
+            projUrl: '#projects',
+            inProgress: true
         }
     ]
 

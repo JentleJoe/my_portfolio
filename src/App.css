@@ -552,6 +552,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/********** Project Card Css *********/
+.proj-btn{
+  color: #fff;
+  letter-spacing: 0.8px;
+  justify-content: center;
+  align-items: center;
+}
+.proj-btn svg {
+  font-size: 25px;
+  margin-left: 2px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.proj-btn:hover svg {
+  margin-left: 18px;
+}
+.proj-progress{
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
 
 /************ Contact Css ************/
 .contact {
