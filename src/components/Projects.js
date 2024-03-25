@@ -15,7 +15,7 @@ export default function Projects(){
         {
             show: true,
             title: "Business Landing Page",
-            description: "A business landing page with modern UI built with react.js and tailwind css",
+            description: "Modern UI business landing page built with react.js and tailwind css",
             imgUrl: joebank,
             projUrl: '#projects'    //Change to URL live site
         },
@@ -29,7 +29,7 @@ export default function Projects(){
         {
             show: false,
             title: "Little Lemon Restaurant",
-            description:   `A restaurant homepage with fully functional table
+            description: `Restaurant with table
             reservation section.
              STILL UNDER BUILD ...`,
             imgUrl: littleLemon,
