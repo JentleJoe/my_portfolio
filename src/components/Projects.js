@@ -32,7 +32,7 @@ export default function Projects(){
             redirect: false,
             title: "Little Lemon Restaurant",
             description: `Restaurant with table
-            reservation section,
+            reservation section`,
             imgUrl: littleLemon,
             projUrl: '#projects',
             inProgress: true
