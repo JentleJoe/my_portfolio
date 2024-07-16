@@ -326,6 +326,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 
+.realname, .real-title{
+  color: white;
+  font-weight: 500;
+}
+
 @media (max-width: 767px) {
   .banner{
     padding: 100px 0 100px 0;

@@ -29,13 +29,13 @@ export default function Projects(){
             inProgress: false
         },
         {
-            redirect: false,
+            redirect: true,
             title: "Little Lemon Restaurant",
             description: `Restaurant with table
             reservation section`,
             imgUrl: littleLemon,
-            projUrl: '#projects',
-            inProgress: true
+            projUrl: 'https://littlelemonfoods.vercel.app',
+            inProgress: false
         }
     ]
 
@@ -100,7 +100,13 @@ export default function Projects(){
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <Row>
-                                       <p>Update coming soon...</p>
+                                        {
+                                            projects.map((project, index) => {
+                                                return(
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
                                     </Row>
                                 </Tab.Pane>
                             </Tab.Content>

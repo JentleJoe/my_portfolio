@@ -56,7 +56,7 @@ export default function Banner(){
                     <Col className="banner-text-container" xs={12} md={6} xl={7} >
                         <span className="tagline" >Welcome to my Portfolio</span>
                         <h1>{ 'Hi I\'m JentleJoe, ' }<span className="wrap"> {text} </span> </h1>
-                        <p>{about}</p>
+                        <p>My name is <span className="realname">Joshua Oseghale</span>, I am a <span className="real-title">Frontend Web Developer</span>{about}</p>
                         <button className="connect-btn">Let's Connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
