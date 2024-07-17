@@ -1,7 +1,7 @@
 import { Col, Container, Row, Tab } from "react-bootstrap"
 import portfolio from '../assets/img/portfolio.png'
 import joebank from '../assets/img/joebank.png'
-import littleLemon from '../assets/img/little-lemon.png'
+import littleLemon from '../assets/img/little-lemon.svg'
 import Nav from 'react-bootstrap/Nav';
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png"
