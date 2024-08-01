@@ -52,12 +52,13 @@ export default function Banner(){
     return(
         <section className="banner" id="home" >
             <Container>
+                <div className="logo">JO</div>
                 <Row className="align-items-center">
                     <Col className="banner-text-container" xs={12} md={6} xl={7} >
-                        <span className="tagline" >Welcome to my Portfolio</span>
+                        {/* <span className="tagline" >Welcome to my Portfolio</span> */}
                         <h1>{ 'Hi I\'m JentleJoe, ' }<span className="wrap"> {text} </span> </h1>
-                        <p>My name is <span className="realname">Joshua Oseghale</span>, I am a <span className="real-title">Frontend Web Developer</span>{about}</p>
-                        <button className="connect-btn">Let's Connect <ArrowRightCircle size={25} /></button>
+                        <p className="about-text">I am a <span className="real-title">Frontend Web Developer</span>{about}</p>
+                        <button className="connect-btn">Contact Me <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={astronaut} alt="Header Img" />

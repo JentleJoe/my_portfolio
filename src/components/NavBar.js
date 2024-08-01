@@ -10,10 +10,16 @@ const NavBar = () => {
 
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+    const [showMobileNav, setShowMobileNav] = useState(false)
 
     // state to display navbar based on scroll position
     // const [scrollPos, setScrollPos] = useState(0)
     const [scrollDirection, setScrollDirection] =  useState("")
+
+    const toggleNav = () => {
+      setShowMobileNav(prev => !prev)
+    }
+    console.log(showMobileNav)
 
     // logic to display navbar based on scroll direction.
     // FAULT: Dynamically changing text automatically scrolls screen causing glitch
@@ -69,12 +75,14 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className={`${scrolled ? 'scrolled' : ''}
     ${window.scrollY > 150 && scrollDirection === "down" ? "scrollup" : ""}
-    ${window.scrollY > 150 && scrollDirection === "up" ? "scrolldown" : ""} `} >
+    ${window.scrollY > 150 && scrollDirection === "up" ? "scrolldown" : ""}
+    ${showMobileNav && 'nav-white' } `
+    } >
       <Container>
         {/* <Navbar.Brand href="#home">
             <img src={logo}  alt = "logo" />
         </Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" >
+        <Navbar.Toggle aria-controls='basic-navbar-nav barbar' onClick={toggleNav} >
             <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">

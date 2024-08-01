@@ -36,18 +36,47 @@ export default function Skills(){
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>Skills</h2>
+                            <h2 className="heading-text">Skills</h2>
                             <p>
                                 {skills}
                             </p>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <div className="skill-list">
+                                <div>
+                                    TypeScript<br />
+                                    React.js<br />
+                                    Next.js<br />
+                                    Git
+                                </div>
+                                <div>
+                                    JavaScript<br />
+                                    Tailwind Css<br />
+                                    Html / Css<br />
+                                    Angular.js
+                                </div>
+                                <div>
+                                    Version Control<br />
+                                    Python<br />
+                                    APIs<br />
+                                    C<br />
+                                </div>
+                            </div>
+                            <Carousel responsive={responsive} infinite={true}
+                             autoPlay={true} autoPlaySpeed={2000} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
                                     <h5>Responsive Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Mobile App Development</h5>
+                                    <img src={meter1} alt="Image" />
+                                    <h5>React.js</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Next.js</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>TypeScript</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image" />

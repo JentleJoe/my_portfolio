@@ -44,12 +44,12 @@ export default function Projects(){
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
+                        <h2 className="heading-text">Projects</h2>
                         <p>
                         {projects_text}
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center"
+                            {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center"
                             id="pills-tab" >
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">All</Nav.Link>
@@ -60,45 +60,9 @@ export default function Projects(){
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Mobile App</Nav.Link>
                                 </Nav.Item>
-                            </Nav>
+                            </Nav> */}
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <Row>
-                                        {
-                                            projects.map((project, index) => {
-                                                return(
-                                                    <ProjectCard key={index} {...project} />
-                                                )
-                                            })
-
-                                            // THIS IS THE SOLUTION BUT THE CONTAINER STYLES DON'T APPLY
-                                            // AGAIN... WORK ON THIS OR MAUALLY ADD NEW STYLES
-
-                                            // return(
-                                            //     project.show ?
-                                            //     <a href={project.projUrl} target="_blank">
-                                            //         <ProjectCard key={index} {...project} />
-                                            //     </a>
-                                            //     :
-                                            //     <a href="#projects">
-                                            //         <ProjectCard key={index} {...project} />
-                                            //     </a>
-                                            // )
-                                        }
-                                    </Row>
-                                </Tab.Pane>
-                                <Tab.Pane eventKey="second">
-                                    <Row>
-                                        {
-                                            projects.map((project, index) => {
-                                                return(
-                                                    <ProjectCard key={index} {...project} />
-                                                )
-                                            })
-                                        }
-                                    </Row>
-                                </Tab.Pane>
-                                <Tab.Pane eventKey="third">
                                     <Row>
                                         {
                                             projects.map((project, index) => {
