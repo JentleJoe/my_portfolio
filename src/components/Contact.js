@@ -83,10 +83,10 @@ export default function Contact(){
                                 <Col>
                                     <textarea rows="6" value={formDetails.message} placeholder="Message"
                                     onChange={(e) => {updateForm('message', e.target.value)}} />
-                                    <button type="submit"><span>{buttonText}</span></button>
+                                    <button className="form-btn" type="submit"><span>{buttonText}</span></button>
                                 </Col>
                                 {
-                                    status.message && 
+                                    status.message &&
                                     <Col>
                                         <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                                     </Col>

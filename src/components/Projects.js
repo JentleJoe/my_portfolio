@@ -1,41 +1,41 @@
 import { Col, Container, Row, Tab } from "react-bootstrap"
-import portfolio from '../assets/img/portfolio.png'
 import joebank from '../assets/img/joebank.png'
-import littleLemon from '../assets/img/little-lemon.svg'
-import Nav from 'react-bootstrap/Nav';
-import ProjectCard from "./ProjectCard";
+import littleLemon from '../assets/img/littlelemon.png'
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import { projects_text } from "./Text";
+import Cards from "./Cards";
+import vwakpor from '../assets/img/vwakpor-hero.png'
 
 
 
 export default function Projects(){
 
-    const projects = [
+    const projectDetails = [
         {
-            redirect: true,
-            title: "Business Landing Page",
-            description: "Modern UI business landing page built with react.js and tailwind css",
-            imgUrl: joebank,
-            projUrl: 'https://joebank.vercel.app',
-            inProgress: false
+            image: joebank,
+            type: "Business Website",
+            title: "JoeBank Business Landing Page",
+            url: 'https://joebank.vercel.app',
+            githubLink: 'https://github.com/JentleJoe/modern_landing_page',
+            text: `A modern business landing page built with React.js and Tailwind Css`
         },
         {
-            redirect: false,
-            title: "Portfolio Page",
-            description: "React Portfolio page with modern UI and animations",
-            imgUrl: portfolio,
-            projUrl: '#home',
-            inProgress: false
-        },
-        {
-            redirect: true,
+            image: littleLemon,
+            type: "Restaurant's Website",
             title: "Little Lemon Restaurant",
-            description: `Restaurant with table
-            reservation section`,
-            imgUrl: littleLemon,
-            projUrl: 'https://littlelemonfoods.vercel.app',
-            inProgress: false
+            url: 'https://littlelemonfoods.vercel.app',
+            githubLink: 'https://github.com/JentleJoe/little_lemon',
+            text: `Restaurant landing page with table reservation section
+            connected to a live API to fetch available times. Built with React.js`
+        },
+        {
+            image: vwakpor,
+            type: "Multi-page Website",
+            title: "Multi Page Brand Identity Website",
+            url: 'https://vwakpor.vercel.app',
+            githubLink: 'https://github.com/jentlejoe',
+            text: `Multi-page brand identity website built with React.js, Tailwind Css
+            and React Router Dom for routes `
         }
     ]
 
@@ -45,36 +45,17 @@ export default function Projects(){
                 <Row>
                     <Col>
                         <h2 className="heading-text">Projects</h2>
-                        <p>
-                        {projects_text}
-                        </p>
-                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center"
-                            id="pills-tab" >
-                                <Nav.Item>
-                                    <Nav.Link eventKey="first">All</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="second">Web</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="third">Mobile App</Nav.Link>
-                                </Nav.Item>
-                            </Nav> */}
-                            <Tab.Content>
-                                <Tab.Pane eventKey="first">
-                                    <Row>
-                                        {
-                                            projects.map((project, index) => {
-                                                return(
-                                                    <ProjectCard key={index} {...project} />
-                                                )
-                                            })
-                                        }
-                                    </Row>
-                                </Tab.Pane>
-                            </Tab.Content>
-                        </Tab.Container>
+                        <p className="proj-subheading">{projects_text}</p>
+                        <div className="projcard-container">
+                            {
+                                projectDetails.map((project, index) => {
+                                    return(
+                                        <Cards key={index} image={project.image} type={project.type} title={project.title}
+                                        url={project.url} githubLink={project.githubLink} text={project.text} />
+                                    )
+                                })
+                            }
+                        </div>
                     </Col>
                 </Row>
             </Container>
