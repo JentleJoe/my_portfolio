@@ -15,9 +15,6 @@ export default function Footer() {
         <footer className="footer">
             <Container>
                 <Row>
-                    <Col sm={6} >
-                        {/* <img src={logo} alt="Logo" className="footer-logo   " /> */}
-                    </Col>
                     <Col sm={6} className="text-center text-sm-end" >
                         <div className="social-icon">
                         <a href={linkdinLink} target="_blank"><img src={linkdinLogo} alt='' /></a>
