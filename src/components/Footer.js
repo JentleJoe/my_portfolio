@@ -14,15 +14,13 @@ export default function Footer() {
     return(
         <footer className="footer">
             <Container>
-                <Row>
-                    <Col sm={6} className="text-center text-sm-end" >
-                        <div className="social-icon">
-                        <a href={linkdinLink} target="_blank"><img src={linkdinLogo} alt='' /></a>
-                        <a href={twitterLink} target="_blank"><img src={xlogo} alt='' /></a>
-                        <a href={githubLink} target="_blank"><img src={githubLogo} alt='' /></a>
-                        </div>
-                        <p>CopyRight 2024. All Right Reserved</p>
-                    </Col>
+                <Row className="text-center">
+                    <div className="social-icon">
+                    <a href={linkdinLink} target="_blank"><img src={linkdinLogo} alt='' /></a>
+                    <a href={twitterLink} target="_blank"><img src={xlogo} alt='' /></a>
+                    <a href={githubLink} target="_blank"><img src={githubLogo} alt='' /></a>
+                    </div>
+                    <p>CopyRight 2024. All Right Reserved</p>
                 </Row>
             </Container>
         </footer>
