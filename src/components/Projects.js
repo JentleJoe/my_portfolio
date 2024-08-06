@@ -2,6 +2,7 @@ import { Col, Container, Row, Tab } from "react-bootstrap"
 import joebank from '../assets/img/joebank.png'
 import littleLemon from '../assets/img/littlelemon.png'
 import colorSharp2 from "../assets/img/color-sharp2.png"
+import portfolio from '../assets/img/portfolio.png'
 import { projects_text } from "./Text";
 import Cards from "./Cards";
 import vwakpor from '../assets/img/vwakpor-hero.png'
@@ -33,6 +34,15 @@ export default function Projects(){
             type: "Multi-page Website",
             title: "Multi Page Brand Identity Website",
             url: 'https://vwakpor.vercel.app',
+            githubLink: 'https://github.com/jentlejoe',
+            text: `Multi-page brand identity website built with React.js, Tailwind Css
+            and React Router Dom for routes `
+        },
+        {
+            image: portfolio,
+            type: "Portfolio Website",
+            title: "My Portfolio",
+            url: '',
             githubLink: 'https://github.com/jentlejoe',
             text: `Multi-page brand identity website built with React.js, Tailwind Css
             and React Router Dom for routes `
