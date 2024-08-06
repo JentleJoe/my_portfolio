@@ -17,11 +17,11 @@ export default function Contact(){
     const [status, setStatus] = useState({})
 
     // Form Dummy text state management
-    const [showText, setShowText] = useState(false)
+    // const [showText, setShowText] = useState(false)
 
-    const handleShowText = () => {
-        setShowText((prev) => !prev)
-    }
+    // const handleShowText = () => {
+    //     setShowText((prev) => !prev)
+    // }
 
     const updateForm = (category, value) => {
         setFormDetails({
@@ -50,7 +50,7 @@ export default function Contact(){
         // }
 
         // remove after setting up email functionality
-        handleShowText();
+        // handleShowText();
       };
 
     return(
@@ -83,7 +83,8 @@ export default function Contact(){
                                 <Col>
                                     <textarea rows="6" value={formDetails.message} placeholder="Message"
                                     onChange={(e) => {updateForm('message', e.target.value)}} />
-                                    <button className="form-btn" type="submit"><span>{buttonText}</span></button>
+                                    <button className="form-btn" type="submit"
+                                    onClick={() => window.location.href = 'mailto:your_email@example.com'} ><span>{buttonText}</span></button>
                                 </Col>
                                 {
                                     status.message &&
@@ -93,11 +94,6 @@ export default function Contact(){
                                 }
                             </Row>
                         </form>
-                        {showText && <p className="dummyText"> <span className="exclamation">!! </span>
-                        This is just a dummy form, please connect through <span> </span>
-                        <a className="dummyLink" target="_blanck" href="https://linkedin.com/in/joshua-oseghale">LinkdIn</a>
-                        <br/> OR <br /> Send a mail to <span className="mail">joshuaoseghale01@gmail.com</span>
-                        </p>}
                     </Col>
                 </Row>
             </Container>
