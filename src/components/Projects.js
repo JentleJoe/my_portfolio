@@ -18,6 +18,7 @@ export default function Projects(){
             title: "JoeBank Business Landing Page",
             url: 'https://joebank.vercel.app',
             githubLink: 'https://github.com/JentleJoe/modern_landing_page',
+            target: '_blank',
             text: `A modern business landing page built with React.js and Tailwind Css`
         },
         {
@@ -26,6 +27,7 @@ export default function Projects(){
             title: "Little Lemon Restaurant",
             url: 'https://littlelemonfoods.vercel.app',
             githubLink: 'https://github.com/JentleJoe/little_lemon',
+            target: '_blank',
             text: `Restaurant landing page with table reservation section
             connected to a live API to fetch available times. Built with React.js`
         },
@@ -35,6 +37,7 @@ export default function Projects(){
             title: "Multi Page Brand Identity Website",
             url: 'https://vwakpor.vercel.app',
             githubLink: 'https://github.com/jentlejoe',
+            target: '_blank',
             text: `Multi-page brand identity website built with React.js, Tailwind Css
             and React Router Dom for routes `
         },
@@ -44,8 +47,8 @@ export default function Projects(){
             title: "My Portfolio",
             url: '',
             githubLink: 'https://github.com/jentlejoe',
-            text: `Multi-page brand identity website built with React.js, Tailwind Css
-            and React Router Dom for routes `
+            target: '',
+            text: `Minimalist Portfolio Website built with React.js `
         }
     ]
 
@@ -61,7 +64,7 @@ export default function Projects(){
                                 projectDetails.map((project, index) => {
                                     return(
                                         <Cards key={index} image={project.image} type={project.type} title={project.title}
-                                        url={project.url} githubLink={project.githubLink} text={project.text} />
+                                        url={project.url} githubLink={project.githubLink} text={project.text} target={project.target} />
                                     )
                                 })
                             }
