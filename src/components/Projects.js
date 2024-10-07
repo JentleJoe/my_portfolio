@@ -35,9 +35,9 @@ export default function Projects(){
             image: vwakpor,
             type: "Multi-page Website",
             title: "Multi Page Brand Identity Website",
-            url: 'https://vwakpor.vercel.app',
+            url: '',
             githubLink: 'https://github.com/jentlejoe',
-            target: '_blank',
+            target: '',
             text: `Multi-page brand identity website built with React.js, Tailwind Css
             and React Router Dom for routes `
         },
