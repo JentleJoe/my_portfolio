@@ -6,7 +6,7 @@ import contactImg from "../assets/img/contact-img.svg"
 export default function Contact(){
     const formInitialDetails = {
         firstName: '',
-        lastNme: '',
+        lastName: '',
         email: '',
         phone: '',
         message: ''
