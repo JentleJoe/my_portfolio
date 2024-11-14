@@ -1,6 +1,5 @@
 import {Navbar, Container, Nav} from 'react-bootstrap/';
 import { useState, useEffect } from 'react';
-import logo from '../assets/img/logo.svg'
 import linkdinLogo from '../assets/img/nav-icon1.svg'
 import xlogo from '../assets/img/Xlogo.svg'
 import githubLogo from '../assets/img/github-mark-white.svg'
@@ -19,7 +18,6 @@ const NavBar = () => {
     const toggleNav = () => {
       setShowMobileNav(prev => !prev)
     }
-    console.log(showMobileNav)
 
     // logic to display navbar based on scroll direction.
     // FAULT: Dynamically changing text automatically scrolls screen causing glitch
