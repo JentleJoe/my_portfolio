@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 emailjs.init("o3mWPjzvYVkCJ8j-s");
 
 
-export default function Contact(){
+export default function Contact({ setAlert, alert }){
     const formInitialDetails = {
         firstName: '',
         lastName: '',
@@ -15,6 +15,8 @@ export default function Contact(){
         phone: '',
         message: ''
     }
+
+    console.log(alert)
 
     const [formData, setformData] = useState(formInitialDetails)
     const [buttonText, setButtonText] = useState('Send')
@@ -59,6 +61,7 @@ export default function Contact(){
                     success: true,
                     message: "Message sent successfully!"
                 });
+                setAlert(`Message sent successfully!`, 'green')
                 clearForm();
             }
         } catch (error) {
@@ -67,6 +70,7 @@ export default function Contact(){
                 success: false,
                 message: "Something went wrong. Please try again later."
             });
+            setAlert(`Something went wrong. Please try again later`, 'red')
         } finally {
             setLoading(false);
             setButtonText('Send');

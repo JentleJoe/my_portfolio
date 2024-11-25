@@ -6,12 +6,23 @@ import portfolio from '../assets/img/portfolio.png'
 import { projects_text } from "./Text";
 import Cards from "./Cards";
 import vwakpor from '../assets/img/vwakpor-hero.png'
+import vwakpor_new from '../assets/img/vwakpor_new.png'
+import homebuzz from '../assets/img/homebuzz.png'
 
 
 
 export default function Projects(){
 
     const projectDetails = [
+        {
+            image: homebuzz,
+            type: "Business Website",
+            title: "Real Estate Website",
+            url: 'https://buzzhomes.vercel.app',
+            githubLink: 'https://github.com/JentleJoe/',
+            target: '_blank',
+            text: `A multi-page real estate website with modern UI and a portfolio section to manage investments online. Built with React.js and Tailwind Css`
+        },
         {
             image: joebank,
             type: "Business Website",
@@ -20,6 +31,25 @@ export default function Projects(){
             githubLink: 'https://github.com/JentleJoe/modern_landing_page',
             target: '_blank',
             text: `A modern business landing page built with React.js and Tailwind Css`
+        },
+        {
+            image: vwakpor_new,
+            type: "Multi-page Website",
+            title: "Multi Page Brand Identity Website",
+            url: 'https://vwakpor.vercel.app',
+            githubLink: 'https://github.com/jentlejoe',
+            target: '',
+            text: `Multi-page brand identity website with a professional booking page
+            section. Built with React.js and Tailwind Css. `
+        },
+        {
+            image: portfolio,
+            type: "Portfolio Website",
+            title: "Portfolio Website",
+            url: '',
+            githubLink: 'https://github.com/jentlejoe',
+            target: '',
+            text: `Minimalist Portfolio Website built with React.js `
         },
         {
             image: littleLemon,
@@ -31,25 +61,6 @@ export default function Projects(){
             text: `Restaurant landing page with table reservation section
             connected to a live API to fetch available times. Built with React.js`
         },
-        {
-            image: vwakpor,
-            type: "Multi-page Website",
-            title: "Multi Page Brand Identity Website",
-            url: '',
-            githubLink: 'https://github.com/jentlejoe',
-            target: '',
-            text: `Multi-page brand identity website built with React.js, Tailwind Css
-            and React Router Dom for routes `
-        },
-        {
-            image: portfolio,
-            type: "Portfolio Website",
-            title: "My Portfolio",
-            url: '',
-            githubLink: 'https://github.com/jentlejoe',
-            target: '',
-            text: `Minimalist Portfolio Website built with React.js `
-        }
     ]
 
     return(
