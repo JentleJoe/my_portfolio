@@ -22,7 +22,7 @@ export default function Projects(){
             url: 'https://buzzhomes.vercel.app',
             githubLink: 'https://github.com/JentleJoe/',
             target: '_blank',
-            text: `A multi-page real estate website with modern UI and a portfolio section to manage investments online. Built with React.js and Tailwind Css`
+            text: `A multi-page real estate website featuring a modern UI and a portfolio dashboard for managing investments online, built with React.js and Tailwind CSS.`
         },
         {
             image: joebank,
@@ -31,7 +31,8 @@ export default function Projects(){
             url: 'https://joebank.vercel.app',
             githubLink: 'https://github.com/JentleJoe/modern_landing_page',
             target: '_blank',
-            text: `A modern business landing page built with React.js and Tailwind Css`
+            text: `A modern online banking website landing page featuring a rich user interface
+            with contemporary design trends. Built with React.js and Tailwind CSS.`
         },
         {
             image: dashboard,
@@ -40,7 +41,8 @@ export default function Projects(){
             url: 'https://elite-admin-dashboard.vercel.app',
             githubLink: 'https://github.com/JentleJoe/react-admin',
             target: '_blank',
-            text: `React Admin Dashboard`
+            text: `An advanced admin dashboard with light and dark mode, featuring dedicated sections for team management with data tables
+            and interactive charts for visualizing product information.`
         },
         {
             image: sheerluck,
@@ -49,7 +51,8 @@ export default function Projects(){
             url: 'https://sheerluck.vercel.app',
             githubLink: 'https://github.com/JentleJoe/',
             target: '_blank',
-            text: `Crypto token webite`
+            text: `Crypto token website with modern UI containing an embeded live chart's section
+            that helps you view all the token information in one place.`
         },
         {
             image: vwakpor_new,
@@ -58,8 +61,8 @@ export default function Projects(){
             url: 'https://vwakpor.vercel.app',
             githubLink: 'https://github.com/jentlejoe',
             target: '',
-            text: `Multi-page brand identity website with a professional booking page
-            section. Built with React.js and Tailwind Css. `
+            text: `A professional multi-page brand identity website with a blog section and a
+            dedicated bookings page, built using React.js and Tailwind CSS.`
         },
         {
             image: littleLemon,
@@ -68,8 +71,8 @@ export default function Projects(){
             url: 'https://littlelemonfoods.vercel.app',
             githubLink: 'https://github.com/JentleJoe/little_lemon',
             target: '_blank',
-            text: `Restaurant landing page with table reservation section
-            connected to a live API to fetch available times. Built with React.js`
+            text: `A restaurant landing page with a table reservation feature integrated
+            with a live API to fetch real-time availability for customer bookings.`
         },
         // {
         //     image: portfolio,
