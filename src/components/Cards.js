@@ -1,5 +1,4 @@
 import React from 'react'
-import littlelemon from '../assets/img/little-lemon.png'
 import { Github } from 'react-bootstrap-icons'
 import github from '../assets/img//github-mark-white.svg'
 

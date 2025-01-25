@@ -5,9 +5,10 @@ import colorSharp2 from "../assets/img/color-sharp2.png"
 import portfolio from '../assets/img/portfolio.png'
 import { projects_text } from "./Text";
 import Cards from "./Cards";
-import vwakpor from '../assets/img/vwakpor-hero.png'
 import vwakpor_new from '../assets/img/vwakpor_new.png'
 import homebuzz from '../assets/img/homebuzz.png'
+import sheerluck from '../assets/img/sheerluck.png'
+import dashboard from '../assets/img/dashboard.png'
 
 
 
@@ -33,6 +34,24 @@ export default function Projects(){
             text: `A modern business landing page built with React.js and Tailwind Css`
         },
         {
+            image: dashboard,
+            type: "Dashboard",
+            title: "Admin Dashboard",
+            url: 'https://elite-admin-dashboard.vercel.app',
+            githubLink: 'https://github.com/JentleJoe/react-admin',
+            target: '_blank',
+            text: `React Admin Dashboard`
+        },
+        {
+            image: sheerluck,
+            type: "Crypto Token Website",
+            title: "$Sheerluck Token Webite",
+            url: 'https://sheerluck.vercel.app',
+            githubLink: 'https://github.com/JentleJoe/',
+            target: '_blank',
+            text: `Crypto token webite`
+        },
+        {
             image: vwakpor_new,
             type: "Multi-page Website",
             title: "Multi Page Brand Identity Website",
@@ -41,15 +60,6 @@ export default function Projects(){
             target: '',
             text: `Multi-page brand identity website with a professional booking page
             section. Built with React.js and Tailwind Css. `
-        },
-        {
-            image: portfolio,
-            type: "Portfolio Website",
-            title: "Portfolio Website",
-            url: '',
-            githubLink: 'https://github.com/jentlejoe',
-            target: '',
-            text: `Minimalist Portfolio Website built with React.js `
         },
         {
             image: littleLemon,
@@ -61,6 +71,15 @@ export default function Projects(){
             text: `Restaurant landing page with table reservation section
             connected to a live API to fetch available times. Built with React.js`
         },
+        // {
+        //     image: portfolio,
+        //     type: "Portfolio Website",
+        //     title: "Portfolio Website",
+        //     url: '',
+        //     githubLink: 'https://github.com/jentlejoe',
+        //     target: '',
+        //     text: `Minimalist Portfolio Website built with React.js `
+        // },
     ]
 
     return(
