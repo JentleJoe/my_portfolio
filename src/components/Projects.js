@@ -27,7 +27,7 @@ export default function Projects(){
         {
             image: joebank,
             type: "Online Bank Website",
-            title: "JoeBank Business Landing Page",
+            title: "Onine Bank Landing Page",
             url: 'https://joebank.vercel.app',
             githubLink: 'https://github.com/JentleJoe/modern_landing_page',
             target: '_blank',
@@ -57,7 +57,7 @@ export default function Projects(){
         {
             image: vwakpor_new,
             type: "Brand Identity Website",
-            title: "Multi Page Brand Identity Website",
+            title: "Vwakpor Brand Identity Website",
             url: 'https://vwakpor.vercel.app',
             githubLink: 'https://github.com/jentlejoe',
             target: '',
