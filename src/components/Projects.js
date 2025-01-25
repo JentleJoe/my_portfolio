@@ -17,7 +17,7 @@ export default function Projects(){
     const projectDetails = [
         {
             image: homebuzz,
-            type: "Business Website",
+            type: "Real Estate Investment Website",
             title: "Real Estate Website",
             url: 'https://buzzhomes.vercel.app',
             githubLink: 'https://github.com/JentleJoe/',
@@ -26,7 +26,7 @@ export default function Projects(){
         },
         {
             image: joebank,
-            type: "Business Website",
+            type: "Online Bank Website",
             title: "JoeBank Business Landing Page",
             url: 'https://joebank.vercel.app',
             githubLink: 'https://github.com/JentleJoe/modern_landing_page',
@@ -36,7 +36,7 @@ export default function Projects(){
         },
         {
             image: dashboard,
-            type: "Dashboard",
+            type: "Admin Dashboard Website",
             title: "Admin Dashboard",
             url: 'https://elite-admin-dashboard.vercel.app',
             githubLink: 'https://github.com/JentleJoe/react-admin',
@@ -56,7 +56,7 @@ export default function Projects(){
         },
         {
             image: vwakpor_new,
-            type: "Multi-page Website",
+            type: "Brand Identity Website",
             title: "Multi Page Brand Identity Website",
             url: 'https://vwakpor.vercel.app',
             githubLink: 'https://github.com/jentlejoe',
