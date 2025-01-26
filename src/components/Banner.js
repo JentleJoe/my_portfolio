@@ -57,7 +57,7 @@ export default function Banner(){
                     <Col className="banner-text-container" xs={12} md={6} xl={7} >
                         {/* <span className="tagline" >Welcome to my Portfolio</span> */}
                         <h1>{ 'Hi I\'m JentleJoe, ' }<span className="wrap"> {text} </span> </h1>
-                        <p className="about-text">I am a <span className="real-title">Frontend Web Developer</span>{about}</p>
+                        <p className="about-text">I am a <span className="real-title">Web Developer and a Frontend Specialist,</span>{about}</p>
                         <button className="connect-btn" onClick={() => window.location.href = 'mailto:joshuaoseghale01@gmail.com'}>Contact Me <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
