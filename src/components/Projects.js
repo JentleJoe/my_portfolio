@@ -22,7 +22,7 @@ export default function Projects(){
             url: 'https://buzzhomes.vercel.app',
             githubLink: 'https://github.com/JentleJoe/',
             target: '_blank',
-            text: `A multi-page real estate website featuring a modern UI and a portfolio dashboard for managing investments online, built with React.js and Tailwind CSS.`
+            text: `A real estate website featuring a modern UI and a portfolio dashboard for managing investments online, built with React.js and Tailwind CSS.`
         },
         {
             image: joebank,
@@ -61,7 +61,7 @@ export default function Projects(){
             url: 'https://vwakpor.vercel.app',
             githubLink: 'https://github.com/jentlejoe',
             target: '',
-            text: `A professional multi-page brand identity website with a blog section and a
+            text: `A professional brand identity website with a blog section and a
             dedicated bookings page, built using React.js and Tailwind CSS.`
         },
         {
