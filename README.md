@@ -1,5 +1,6 @@
-# Portfolio App
+# Portfolio Website
 
-Joshua Oseghale Portfolio Website
+My Portfolio Website
 
-Built with React.js
+## 🚀 Preview
+![Admin Dashboard Preview](https://github.com/JentleJoe/my_portfolio/blob/master/src/assets/img/portfolio.png)
