@@ -9,12 +9,22 @@ import vwakpor_new from '../assets/img/vwakpor_new.png'
 import homebuzz from '../assets/img/homebuzz.png'
 import sheerluck from '../assets/img/sheerluck.png'
 import dashboard from '../assets/img/dashboard.png'
+import trader_dashboard from '../assets/img/trader-dashboard.png'
 
 
 
 export default function Projects(){
 
     const projectDetails = [
+        {
+            image: trader_dashboard,
+            type: "Trader / Investor Dashboard",
+            title: "Trader Dashboard",
+            url: 'https://trader-dashboard.vercel.app',
+            githubLink: 'https://github.com/JentleJoe/',
+            target: '_blank',
+            text: `A portfolio Manager Dashboard built to help traders and investors seamlessly track and manage their investments.`
+        },
         {
             image: homebuzz,
             type: "Real Estate Investment Website",
@@ -74,15 +84,15 @@ export default function Projects(){
             text: `A restaurant landing page with a table reservation feature integrated
             with a live API to fetch real-time availability for customer bookings.`
         },
-        // {
-        //     image: portfolio,
-        //     type: "Portfolio Website",
-        //     title: "Portfolio Website",
-        //     url: '',
-        //     githubLink: 'https://github.com/jentlejoe',
-        //     target: '',
-        //     text: `Minimalist Portfolio Website built with React.js `
-        // },
+        {
+            image: portfolio,
+            type: "Portfolio Website",
+            title: "Portfolio Website",
+            url: '',
+            githubLink: 'https://github.com/jentlejoe',
+            target: '',
+            text: `Minimalist Portfolio Website built with React.js `
+        },
     ]
 
     return(
