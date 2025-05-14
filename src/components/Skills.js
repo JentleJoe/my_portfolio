@@ -48,6 +48,12 @@ export default function Skills(){
                                     Git
                                 </div>
                                 <div>
+                                    Node.js<br />
+                                    Mongo DB<br />
+                                    Express.js<br />
+                                    Supabase
+                                </div>
+                                <div>
                                     JavaScript<br />
                                     Tailwind Css<br />
                                     Html / Css<br />
