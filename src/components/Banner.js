@@ -6,7 +6,7 @@ import astronaut from '../assets/img/astronaut.png'
 
 export default function Banner(){
 
-    const toRotate = ['A Web Developer', 'A Software Engineer', 'A Frontend Developer']
+    const toRotate = ['A Web Developer', 'A Software Engineer', 'A FullStack Developer']
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
