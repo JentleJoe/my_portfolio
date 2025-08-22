@@ -19,6 +19,24 @@ export default function Projects(){
 
     const projectDetails = [
         {
+            image: kinagelifts,
+            type: "Industrial Website",
+            title: "Kinagelifts",
+            url: 'https://kinagelifts.com',
+            githubLink: '',
+            target: '_blank',
+            text: `A professional industrial website built to high standards, following best practices. The UI features sharp and flat corners for a sophisticated, reliable look that builds trust with visitors.`
+        },
+        {
+            image: jenyrenfoods,
+            type: "Food Brand Website",
+            title: "Jenyrenfoods",
+            url: 'https://jenyrenfoods.com',
+            githubLink: '',
+            target: '_blank',
+            text: `A modern website for the African food brand Jenyrenfoods. Built with adhering to modern UI best practices.`
+        },
+        {
             image: trader_dashboard,
             type: "Trader / Investor Dashboard",
             title: "Trader Dashboard",
@@ -27,24 +45,6 @@ export default function Projects(){
             target: '_blank',
             text: `A portfolio Manager Dashboard built to help traders and investors seamlessly track and manage their investments.`
         },
-            {
-                image: kinagelifts,
-                type: "Industrial Website",
-                title: "Kinagelifts",
-                url: 'https://kinagelifts.com',
-                githubLink: '',
-                target: '_blank',
-                text: `A professional industrial website built to high standards, following best practices. The UI features sharp and flat corners for a sophisticated, reliable look that builds trust with visitors.`
-            },
-            {
-                image: jenyrenfoods,
-                type: "Food Brand Website",
-                title: "Jenyrenfoods",
-                url: 'https://jenyrenfoods.com',
-                githubLink: '',
-                target: '_blank',
-                text: `A modern website for the African food brand Jenyrenfoods. Built with adhering to modern UI best practices.`
-            },
         {
             image: homebuzz,
             type: "Real Estate Investment Website",
